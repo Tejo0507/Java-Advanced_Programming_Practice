@@ -34,3 +34,13 @@ class Student4
     }
 }
 
+class GraduateStudent extends Student4
+{
+
+    public String specialization;
+
+    public GraduateStudent(String name, int rollNumber, String course, double marks, String specialization)
+    {
+        super(name, rollNumber, course, marks);
+        this.specialization = specialization;
+    }
