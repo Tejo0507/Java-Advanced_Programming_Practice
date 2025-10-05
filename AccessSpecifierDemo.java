@@ -14,3 +14,10 @@ class Student4
         this.course = course;
         this.marks = marks;
     }
+    
+    public void displayPublicInfo()
+    {
+        System.out.println("Name: " + name);
+        System.out.println("Roll Number: " + rollNumber);
+        System.out.println("Course: " + course);
+    }
