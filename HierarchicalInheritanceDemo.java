@@ -46,3 +46,13 @@ class Attendance extends Student2
         System.out.println("Days Present: " + daysPresent);
     }
 }
+
+public class HierarchicalInheritanceDemo
+{
+    public static void main(String[] args)
+    {
+        Marks2 m = new Marks2();
+        m.getStudentDetails("Anand", 103);
+        m.getMarks(95);
+        m.displayStudentDetails();
+        m.displayMarks();
