@@ -44,3 +44,12 @@ class GraduateStudent extends Student4
         super(name, rollNumber, course, marks);
         this.specialization = specialization;
     }
+
+    public void displayGraduateInfo()
+    {
+        System.out.println("Graduate Student Name: " + name);
+        System.out.println("Roll Number: " + rollNumber);
+        System.out.println("Course: " + course);
+        System.out.println("Specialization: " + specialization);
+    }
+}
