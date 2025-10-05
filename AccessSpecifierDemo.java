@@ -21,3 +21,10 @@ class Student4
         System.out.println("Roll Number: " + rollNumber);
         System.out.println("Course: " + course);
     }
+
+    private void displayMarks()
+    {
+        System.out.println("Marks: " + marks);
+    }
+
+    
