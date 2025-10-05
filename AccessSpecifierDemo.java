@@ -36,9 +36,8 @@ class Student4
 
 class GraduateStudent extends Student4
 {
-
     public String specialization;
-
+    
     public GraduateStudent(String name, int rollNumber, String course, double marks, String specialization)
     {
         super(name, rollNumber, course, marks);
@@ -53,3 +52,8 @@ class GraduateStudent extends Student4
         System.out.println("Specialization: " + specialization);
     }
 }
+
+public class AccessSpecifierDemo
+{
+    public static void main(String[] args)
+    {
