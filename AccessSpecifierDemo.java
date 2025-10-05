@@ -62,3 +62,8 @@ public class AccessSpecifierDemo
          gs.displayPublicInfo();
          gs.displayGraduateInfo();
         
+         gs.showFullInfo();
+        
+         System.out.println("Name: " + gs.name);
+    }
+}
