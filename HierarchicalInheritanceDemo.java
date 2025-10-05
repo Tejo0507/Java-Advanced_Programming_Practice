@@ -56,3 +56,13 @@ public class HierarchicalInheritanceDemo
         m.getMarks(95);
         m.displayStudentDetails();
         m.displayMarks();
+
+        System.out.println();
+
+        Attendance a = new Attendance();
+        a.getStudentDetails("Divya", 104);
+        a.getAttendance(180);
+        a.displayStudentDetails();
+        a.displayAttendance();
+    }
+}
