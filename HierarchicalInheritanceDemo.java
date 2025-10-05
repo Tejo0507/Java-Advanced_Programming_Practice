@@ -31,3 +31,18 @@ class Marks2 extends Student2
         System.out.println("Marks: " + marks);
     }
 }
+
+class Attendance extends Student2
+{
+    int daysPresent;
+
+    void getAttendance(int days)
+    {
+        this.daysPresent = days;
+    }
+
+    void displayAttendance()
+    {
+        System.out.println("Days Present: " + daysPresent);
+    }
+}
