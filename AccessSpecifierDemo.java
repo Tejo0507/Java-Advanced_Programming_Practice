@@ -27,4 +27,10 @@ class Student4
         System.out.println("Marks: " + marks);
     }
 
-    
+    public void showFullInfo()
+    {
+        displayPublicInfo();
+        displayMarks();
+    }
+}
+
