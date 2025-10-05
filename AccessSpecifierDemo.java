@@ -57,3 +57,8 @@ public class AccessSpecifierDemo
 {
     public static void main(String[] args)
     {
+         GraduateStudent gs = new GraduateStudent("Rahul", 101, "Computer Science", 88.5, "AI");
+        
+         gs.displayPublicInfo();
+         gs.displayGraduateInfo();
+        
