@@ -16,3 +16,18 @@ class Student2
         System.out.println("Roll No: " + rollNo);
     }
 }
+
+class Marks2 extends Student2
+{
+    int marks;
+
+    void getMarks(int marks)
+    {
+        this.marks = marks;
+    }
+
+    void displayMarks()
+    {
+        System.out.println("Marks: " + marks);
+    }
+}
