@@ -1,1 +1,15 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+class MathTeacher extends Teacher {
+   int numberOfClasses;
+
+   MathTeacher(String var1, String var2, int var3) {
+      super(var1, var2);
+      this.numberOfClasses = var3;
+   }
+
+   void displayMathTeacherDetails() {
+      this.displayDetails();
+      System.out.println("Number of Classes Handled: " + this.numberOfClasses);
+   }
+}
 
