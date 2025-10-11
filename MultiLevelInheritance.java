@@ -27,3 +27,13 @@ class Marks extends Student {
         System.out.println("Marks: " + marks);
     }
 }
+
+class Result extends Marks {
+    void displayResult() {
+        if (marks >= 50) {
+            System.out.println("Result: Pass");
+        } else {
+            System.out.println("Result: Fail");
+        }
+    }
+}
