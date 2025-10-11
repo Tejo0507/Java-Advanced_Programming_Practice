@@ -22,3 +22,8 @@ class Marks extends Student {
     void getMarks(int marks) {
         this.marks = marks;
     }
+
+    void displayMarks() {
+        System.out.println("Marks: " + marks);
+    }
+}
