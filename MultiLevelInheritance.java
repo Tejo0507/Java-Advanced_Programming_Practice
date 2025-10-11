@@ -18,3 +18,7 @@ class Student
 
 class Marks extends Student {
     int marks;
+    
+    void getMarks(int marks) {
+        this.marks = marks;
+    }
