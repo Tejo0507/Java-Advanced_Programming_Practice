@@ -17,3 +17,12 @@ class Student1
         System.out.println("Roll No: " + rollNo);
     }
 }
+    void getMarks(int marks)
+    {
+        this.marks = marks;
+    }
+    void displayMarks()
+    {
+        System.out.println("Marks: " + marks);
+    }
+}
