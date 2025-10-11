@@ -15,3 +15,6 @@ class Student
         System.out.println("Roll No: " + rollNo);
     }
 }
+
+class Marks extends Student {
+    int marks;
