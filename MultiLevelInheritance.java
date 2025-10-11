@@ -37,3 +37,15 @@ class Result extends Marks {
         }
     }
 }
+
+public class MultilevelInheritanceDemo {
+    public static void main(String[] args) {
+        Result r = new Result();
+        r.getStudentDetails("Priya", 102);
+        r.getMarks(72);
+
+        r.displayStudentDetails();
+        r.displayMarks();
+        r.displayResult();
+    }
+}
