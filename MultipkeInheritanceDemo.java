@@ -21,3 +21,13 @@ class MyClass implements InterfaceA, InterfaceB
         System.out.println("Method B from Interface B");
     }
 }
+
+public class MultipleInheritanceDemo
+{
+    public static void main(String[] args)
+    {
+        MyClass obj = new MyClass();
+        obj.methodA();
+        obj.methodB();
+    }
+}
