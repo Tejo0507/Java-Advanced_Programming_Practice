@@ -22,3 +22,11 @@ class ICICI extends Bank
         return 7.3f;
     }  
 }  
+
+class AXIS extends Bank
+{  
+    float getRateOfInterest()
+    {
+        return 9.7f;
+    }  
+}  
