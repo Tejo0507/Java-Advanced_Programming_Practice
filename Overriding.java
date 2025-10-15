@@ -14,3 +14,11 @@ class SBI extends Bank
         return 8.4f;
     }  
 }  
+
+class ICICI extends Bank
+{  
+    float getRateOfInterest()
+    {
+        return 7.3f;
+    }  
+}  
