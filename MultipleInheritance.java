@@ -29,4 +29,4 @@ public class MultipleInheritance
        a.eat();
        a.travel();
     }
- }
+}
