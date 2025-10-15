@@ -14,3 +14,15 @@ class Adder
         return a+b+c;
     } 
 }  
+
+class Overloading1
+{  
+    public static void main(String[] args)
+    {  
+        Adder a=new Adder();
+        System.out.println(a.add(11,11));  
+        System.out.println(a.add(11,11,11));  
+        System.out.println(a.add(11,11,11)); 
+    }
+}  
+    
