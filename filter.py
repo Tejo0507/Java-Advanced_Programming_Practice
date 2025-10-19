@@ -4,3 +4,5 @@ def fun(variable):
         return True
     else: 
         return False
+
+sequence = ['g', 'e', 'e', 'j', 'k', 's', 'p', 'r'] 
