@@ -7,3 +7,8 @@ def Sum(L, i, n, count):
 
     count = Sum(L, i + 1, n, count)
     return count
+
+L = [1, 2, 3, 4, 5]
+count = 0
+n = len(L)
+print(Sum(L, 0, n, count))
