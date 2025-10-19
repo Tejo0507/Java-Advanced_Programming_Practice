@@ -7,4 +7,8 @@ def pure_func(List):
         
     return New_List
     
-    
+Original_List = [1, 2, 3, 4]
+Modified_List = pure_func(Original_List)
+
+print("Original List:", Original_List)
+print("Modified List:", Modified_List)    
