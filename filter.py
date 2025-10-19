@@ -6,3 +6,8 @@ def fun(variable):
         return False
 
 sequence = ['g', 'e', 'e', 'j', 'k', 's', 'p', 'r'] 
+
+filtered = filter(fun, sequence) 
+print('The filtered letters are:') 
+for s in filtered: 
+    print(s) 
