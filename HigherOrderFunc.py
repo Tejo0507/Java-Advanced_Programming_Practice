@@ -7,3 +7,6 @@ def whisper(text):
 def greet(func): 
     greeting = func("Hi, I am created by a function passed as an argument.") 
     print(greeting) 
+
+greet(shout) 
+greet(whisper)
