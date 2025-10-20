@@ -14,7 +14,7 @@ ColorChoose(){
     c.add(b);    
 }    
 public void actionPerformed(ActionEvent e) {    
-Color initialcolor=Color.RED;    
-Color color=JColorChooser.showDialog(this,"Select a color",initialcolor);    
-c.setBackground(color);    
+    Color initialcolor=Color.RED;    
+    Color color=JColorChooser.showDialog(this,"Select a color",initialcolor);    
+    c.setBackground(color);    
 }    
