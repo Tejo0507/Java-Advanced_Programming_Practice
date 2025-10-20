@@ -18,3 +18,10 @@ public void actionPerformed(ActionEvent e) {
     Color color=JColorChooser.showDialog(this,"Select a color",initialcolor);    
     c.setBackground(color);    
 }    
+
+public static void main(String[] args) {    
+    ColorChoose ch=new ColorChoose();    
+    ch.setSize(400,400);    
+    ch.setVisible(true);    
+    ch.setDefaultCloseOperation(EXIT_ON_CLOSE);    
+}    
