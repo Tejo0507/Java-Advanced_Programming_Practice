@@ -19,3 +19,6 @@ def square(x):
 try:
     results = dview.map_sync(square, range(10))
     print(results)
+except Exception as e:
+    print(f"Failed to run the function in parallel: {e}", file=sys.stderr)
+    sys.exit(1)
