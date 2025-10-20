@@ -15,3 +15,7 @@ except Exception as e:
 
 def square(x):
     return x ** 2
+
+try:
+    results = dview.map_sync(square, range(10))
+    print(results)
