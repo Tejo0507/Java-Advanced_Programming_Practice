@@ -67,3 +67,17 @@ public class JdbcExample {
                 String phone = rs.getString("phone");
                 String status = rs.getString("status");
                 String createdAt = rs.getString("created_at");
+
+                System.out.println("ID: " + id);
+                System.out.println("Username: " + username_db);
+                System.out.println("Email: " + email);
+                System.out.println("Name: " + firstName + " " + lastName);
+                System.out.println("Role: " + role);
+                System.out.println("Department: " + (department != null ? department : "N/A"));
+                System.out.println("Designation: " + (designation != null ? designation : "N/A"));
+                System.out.println("Employee ID: " + (employeeId != null ? employeeId : "N/A"));
+                System.out.println("Student ID: " + (studentId != null ? studentId : "N/A"));
+                System.out.println("Phone: " + (phone != null ? phone : "N/A"));
+                System.out.println("Status: " + status);
+                System.out.println("Created: " + createdAt);
+                System.out.println("-" + "-".repeat(60));
