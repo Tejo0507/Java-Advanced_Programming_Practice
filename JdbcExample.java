@@ -20,3 +20,7 @@ public class JdbcExample {
             String connectionString = "jdbc:mysql://localhost:3307/srm_centralized_users";
             String username = "root";
             String password = "OnePlus6@1985";
+            
+            System.out.println("Trying connection: " + connectionString);
+            con = DriverManager.getConnection(connectionString, username, password);
+            System.out.println("✅ Connection successful to srm_centralized_users database!");
