@@ -50,3 +50,20 @@ public class JdbcExample {
 
             System.out.println("\n👥 Users in srm_centralized_users database:");
             System.out.println("=" + "=".repeat(80));
+            
+            int count = 0;
+            while (rs.next()) {
+                count++;
+                int id = rs.getInt("id");
+                String username_db = rs.getString("username");
+                String email = rs.getString("email");
+                String firstName = rs.getString("first_name");
+                String lastName = rs.getString("last_name");
+                String role = rs.getString("role");
+                String department = rs.getString("department");
+                String designation = rs.getString("designation");
+                String employeeId = rs.getString("employee_id");
+                String studentId = rs.getString("student_id");
+                String phone = rs.getString("phone");
+                String status = rs.getString("status");
+                String createdAt = rs.getString("created_at");
