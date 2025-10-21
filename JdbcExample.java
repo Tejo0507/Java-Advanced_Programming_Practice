@@ -81,3 +81,24 @@ public class JdbcExample {
                 System.out.println("Status: " + status);
                 System.out.println("Created: " + createdAt);
                 System.out.println("-" + "-".repeat(60));
+            }
+
+            System.out.println("\n📊 Total users found: " + count);
+
+        } catch (ClassNotFoundException e) {
+            System.out.println("❌ MySQL JDBC Driver not found: " + e.getMessage());
+        } catch (SQLException e) {
+            System.out.println("❌ SQL Exception: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (stmt != null) stmt.close();
+                if (con != null) con.close();
+                System.out.println("\n✅ Resources closed successfully");
+            } catch (SQLException e) {
+                System.out.println("❌ Error closing resources: " + e.getMessage());
+            }
+        }
+    }
+}
