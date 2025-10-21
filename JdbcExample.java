@@ -16,3 +16,7 @@ public class JdbcExample {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("MySQL JDBC Driver loaded successfully");
+
+            String connectionString = "jdbc:mysql://localhost:3307/srm_centralized_users";
+            String username = "root";
+            String password = "OnePlus6@1985";
