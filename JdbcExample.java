@@ -33,3 +33,20 @@ public class JdbcExample {
                 System.out.println("- " + rs.getString(1));
             }
             rs.close();
+            
+            System.out.println("\n�� Users table structure:");
+            rs = stmt.executeQuery("DESCRIBE users");
+            while (rs.next()) {
+                String field = rs.getString("Field");
+                String type = rs.getString("Type");
+                String nullAllowed = rs.getString("Null");
+                String key = rs.getString("Key");
+                System.out.println(field + " | " + type + " | " + nullAllowed + " | " + key);
+            }
+            rs.close();
+            
+            String query = "SELECT id, username, email, first_name, last_name, role, department, designation, employee_id, student_id, phone, status, created_at FROM users ORDER BY created_at DESC";
+            rs = stmt.executeQuery(query);
+
+            System.out.println("\n👥 Users in srm_centralized_users database:");
+            System.out.println("=" + "=".repeat(80));
