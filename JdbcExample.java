@@ -24,3 +24,12 @@ public class JdbcExample {
             System.out.println("Trying connection: " + connectionString);
             con = DriverManager.getConnection(connectionString, username, password);
             System.out.println("✅ Connection successful to srm_centralized_users database!");
+            
+            stmt = con.createStatement();
+
+            System.out.println("\n�� Available tables in srm_centralized_users:");
+            rs = stmt.executeQuery("SHOW TABLES");
+            while (rs.next()) {
+                System.out.println("- " + rs.getString(1));
+            }
+            rs.close();
