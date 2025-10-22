@@ -1,14 +1,14 @@
 package Threading;
 class Multi3 implements Runnable
 {  
- public void run()
+    public void run()
     {  
         System.out.println("thread is running...");  
     }     
- public static void main(String args[])
+    public static void main(String args[])
     {  
         Multi3 m1=new Multi3();  
-        Thread t1 =new Thread(m1);   // Using the constructor Thread(Runnable r)  
+        Thread t1 =new Thread(m1); 
         t1.start();  
     }  
 }  
