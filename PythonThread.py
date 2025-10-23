@@ -33,3 +33,10 @@ thread1.start()
 thread2.start()
 
 # Add threads to thread list
+threads.append(thread1)
+threads.append(thread2)
+
+# Wait for all threads to complete
+for t in threads:
+    t.join()
+print ("Exiting Class.SimpleClass Thread")
