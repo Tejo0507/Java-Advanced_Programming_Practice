@@ -15,3 +15,7 @@ ThreadPriorityExample th3 = new ThreadPriorityExample();
 System.out.println("Priority of the thread th1 is : " + th1.getPriority());  
 System.out.println("Priority of the thread th2 is : " + th2.getPriority());  
 System.out.println("Priority of the thread th2 is : " + th2.getPriority());  
+
+th1.setPriority(6);  
+th2.setPriority(3);  
+th3.setPriority(9);  
