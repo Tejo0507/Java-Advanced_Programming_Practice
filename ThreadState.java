@@ -56,3 +56,11 @@ public class ThreadState implements Runnable
             t2.join();
             System.out.println("State of Thread t2 after join() is" + " " + t2.getState());
         }
+        catch (InterruptedException i3) {
+            i3.printStackTrace();
+        }
+        System.out.println(
+            "state of Thread t1 after completing the execution is"
+            + " " + t1.getState());
+    }
+}
