@@ -59,8 +59,6 @@ public class ThreadState implements Runnable
         catch (InterruptedException i3) {
             i3.printStackTrace();
         }
-        System.out.println(
-            "state of Thread t1 after completing the execution is"
-            + " " + t1.getState());
+        System.out.println("state of Thread t1 after completing the execution is" + " " + t1.getState());
     }
 }
