@@ -38,13 +38,9 @@ public class ThreadState implements Runnable
         System.out.println("post invoking of start() method, state of t1 is" + " " + t1.getState());
     }
 
-        public void run()
+    public void run()
     {
         GFG g1 = new GFG();
         Thread t2 = new Thread(g1);
-        // Thread is created and its in new state.
         t2.start();
-        // Now t2 is moved to runnable state
-        System.out.println(
-            "state of t2 Thread, post-calling of start() method is"
-            + " " + t2.getState());
+        System.out.println("state of t2 Thread, post-calling of start() method is" + " " + t2.getState());
