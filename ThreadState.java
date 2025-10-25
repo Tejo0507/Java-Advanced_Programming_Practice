@@ -44,3 +44,19 @@ public class ThreadState implements Runnable
         Thread t2 = new Thread(g1);
         t2.start();
         System.out.println("state of t2 Thread, post-calling of start() method is" + " " + t2.getState());
+        
+        try {
+            Thread.sleep(202);
+        }
+        catch (InterruptedException i2) {
+            i2.printStackTrace();
+        }
+        System.out.println(
+            "State of Thread t2 after invoking to method sleep() is"
+            + " " + t2.getState());
+        try {
+            t2.join();
+            System.out.println(
+                "State of Thread t2 after join() is"
+                + " " + t2.getState());
+        }
