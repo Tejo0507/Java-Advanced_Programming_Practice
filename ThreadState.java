@@ -29,3 +29,17 @@ public class ThreadState implements Runnable
 {
     public static Thread t1;
     public static ThreadState o1;
+
+    public static void main(String args[])
+    {
+        o1 = new ThreadState();
+        t1 = new Thread(o1);
+        System.out.println("post-spanning, state of t1 is"
+                           + " " + t1.getState());
+        // lets invoke start() method on t1
+        t1.start();
+        // Now,Thread t1 is moved to runnable state
+        System.out.println(
+            "post invoking of start() method, state of t1 is"
+            + " " + t1.getState());
+    }
