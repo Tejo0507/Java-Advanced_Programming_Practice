@@ -40,4 +40,11 @@ class ThreadExample2
         {  
             Thread.sleep(8000);  
         } 
+        catch (InterruptedException excetion) 
+        {  
+            System.out.println("Inturruption occurs in Class.SimpleClass Thread");
+        }  
+        System.out.println("We are exiting from Class.SimpleClass Thread");
+    }  
+}  
        
