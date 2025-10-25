@@ -20,10 +20,6 @@ th1.setPriority(6);
 th2.setPriority(3);  
 th3.setPriority(9);  
 
-  System.out.println("Priority of the thread th1 is : " + th1.getPriority());  
-  
-// 3  
+System.out.println("Priority of the thread th1 is : " + th1.getPriority());  
 System.out.println("Priority of the thread th2 is : " + th2.getPriority());  
-  
-// 9  
 System.out.println("Priority of the thread th3 is : " + th3.getPriority());  
