@@ -24,3 +24,8 @@ class GFG implements Runnable
             i2.printStackTrace();
         }
     }
+    
+public class ThreadState implements Runnable 
+{
+    public static Thread t1;
+    public static ThreadState o1;
