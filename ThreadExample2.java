@@ -28,3 +28,22 @@ class NewThread implements Runnable
         System.out.println(name + " thread exiting.");  
     }  
 }  
+
+class ThreadExample2 
+{    
+    public static void main(String args[]) 
+    {  
+        new NewThread("1st");  
+        new NewThread("2nd");  
+        new NewThread("3rd");  
+        try 
+        {  
+            Thread.sleep(8000);  
+        } 
+        catch (InterruptedException excetion) 
+        {  
+            System.out.println("Inturruption occurs in Class.SimpleClass Thread");
+        }  
+        System.out.println("We are exiting from Class.SimpleClass Thread");
+    }  
+}  
